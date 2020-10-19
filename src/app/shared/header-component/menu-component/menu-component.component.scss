@@ -1,0 +1,24 @@
+.c-menu {
+  display: flex;
+  background: #ffc970;
+  justify-content: center;
+  height: 60px;
+  top: 0;
+
+  &__nav {
+    font-size: 14px;
+    display: inline-flex;
+    padding: 10px, 40px;
+    align-items: center;
+    border-radius: 4px;
+    margin: 15px;
+    text-decoration-line: none;
+    text-decoration-color: none;
+    color: #444444;
+
+
+    &--active {
+      color: white;
+    }
+  }
+}

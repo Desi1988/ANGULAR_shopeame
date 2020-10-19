@@ -1,0 +1,35 @@
+<div class="c-maindiv">
+    <!-- <div > -->
+    <h2 class="c-title">Creación/edición de productos</h2>
+    <!-- </div> -->
+    <div class="c-form">
+
+        <form class="c-form" [formGroup]="formManagementPage">
+            <div>
+                <label for="name">Nombre del producto:</label><br>
+                <input class="c-form__input" id="name" type="text" formControlName="name"
+                    placeholder="Por ej: Tiesto de una planta"><br>
+            </div>
+            <div>
+                <label for="price">Precio:</label><br>
+                <input class="c-form__input" id="price" type="text" formControlName="price" placeholder="9.50"><br>
+            </div>
+            <div>
+                <label for="desc">Descripción</label><br>
+                <input class="c-form__input" id="desc" type="text" formControlName="description"><br>
+            </div>
+            <div>
+                <label for="img">Ruta de la imagen</label><br>
+                <input class="c-form__input" id="img" type="text" formControlName="image"><br>
+            </div>
+            <div>
+                <label for="opinion">Opinión</label><br>
+                <input class="c-form__input" id="opinion" type="text" formControlName="stars"><br>
+            </div>
+        </form>
+        <button class="c-form__button" (click)="addProduct()">guardar</button>
+    </div>
+    <!-- <div class="c-div2">
+        mostrará el producto buscado
+    </div> -->
+</div>

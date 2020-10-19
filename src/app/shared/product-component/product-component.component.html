@@ -1,0 +1,17 @@
+    <div *ngFor="let product of productList" class="c-div col-12 col-md-6 col-lg-4">
+        <ul class="c-list">
+        <li><img src="{{product.image}}" alt="" class="c-list__img"/>
+        <li><p>{{product.name}}</p></li>
+        <li ><p class="c-list__price" >€{{product.price}}</p></li>
+        <li><p class="c-list__description">{{product.description}}</p></li>
+        <li><p>{{product.stars}}</p></li>
+        <button type="button" class="c-list__button">Añadir</button>
+    </ul>
+    
+
+    </div>
+
+
+
+
+    
